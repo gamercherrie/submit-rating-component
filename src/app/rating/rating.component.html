@@ -1,0 +1,26 @@
+<section class="rating">
+    <div class="rating__component">
+        <div class="rating__component-icon">
+            <app-svg-icon-component class="star" [path]="'assets/images/icon-star.svg'"></app-svg-icon-component>
+        </div>
+        <div class="rating__component-notif">
+            <h1>How did we do?</h1>
+            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            <div class="rating__component-rate">
+                <input type="radio" id="star1" name="rating" [(ngModel)]="selectedRating" value="1" />
+                <label for="star1">1</label>
+                <input type="radio" id="star2" name="rating" [(ngModel)]="selectedRating" value="2" />
+                <label for="star2">2</label>
+                <input type="radio" id="star3" name="rating" [(ngModel)]="selectedRating" value="3" />
+                <label for="star3">3</label>
+                <input type="radio" id="star4" name="rating" [(ngModel)]="selectedRating" value="4" />
+                <label for="star4">4</label>
+                <input type="radio" id="star5" name="rating" [(ngModel)]="selectedRating" value="5" />
+                <label for="star5">5</label>
+            </div>
+            <div class="rating__component-submit">
+                <button (click)="onSubmit()">Submit</button>
+            </div>
+        </div>
+    </div>
+</section>
